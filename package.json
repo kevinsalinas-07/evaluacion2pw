@@ -1,10 +1,11 @@
 {
-  "name": "evaluacion2pw-backend",
+  "name": "evaluacion-2-backend",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Backend en memoria - Evaluación II Programación Web",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "node --watch src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
