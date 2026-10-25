@@ -1,0 +1,9 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.panel-superior {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
