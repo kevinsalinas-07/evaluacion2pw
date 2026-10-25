@@ -41,12 +41,22 @@ export const eliminarPlatoApi = async (id) => {
   return verificarRespuesta(res);
 };
 
-export const reiniciarReservaApi = async () => {
-  const res = await fetch(`${API_URL}/reserva/reiniciar`, { method: 'POST' });
+export const confirmarReservaApi = async () => {
+  const res = await fetch(`${API_URL}/reserva/confirmar`, { method: 'POST' });
   return verificarRespuesta(res);
 };
 
-export const confirmarReservaApi = async () => {
-  const res = await fetch(`${API_URL}/reserva/confirmar`, { method: 'POST' });
+export const resetearTurnoApi = async () => {
+  const res = await fetch(`${API_URL}/reserva/reset`, { method: 'POST' });
+  return verificarRespuesta(res);
+};
+
+export const restaurarStockApi = async () => {
+  const res = await fetch(`${API_URL}/reserva/restaurar-stock`, { method: 'POST' });
+  return verificarRespuesta(res);
+};
+
+export const reiniciarReservaApi = async () => {
+  const res = await fetch(`${API_URL}/reserva/reiniciar`, { method: 'POST' });
   return verificarRespuesta(res);
 };
