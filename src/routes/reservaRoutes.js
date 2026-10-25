@@ -6,8 +6,10 @@ const {
   agregarPlato,
   actualizarPorciones,
   eliminarPlato,
-  reiniciarReserva,
-  confirmarReserva
+  confirmarReserva,
+  resetearTurno,
+  restaurarStock,
+  reiniciarReserva
 } = require('../controllers/reservaController');
 
 router.get('/menu', obtenerMenu);
@@ -16,7 +18,9 @@ router.post('/reserva/agregar', agregarPlato);
 router.put('/reserva/actualizar-porciones/:id', actualizarPorciones);
 router.delete('/reserva/eliminar/:id', eliminarPlato);
 
-router.post('/reserva/reiniciar', reiniciarReserva);
 router.post('/reserva/confirmar', confirmarReserva);
+router.post('/reserva/reset', resetearTurno);
+router.post('/reserva/restaurar-stock', restaurarStock);
+router.post('/reserva/reiniciar', reiniciarReserva);
 
 module.exports = router;
